@@ -4,26 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/base.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>添加歌曲</h2>
-    <form id="form" action="/music/add" method="post" enctype="multipart/form-data">
-    <div>
-        <p>
-            <label for="">歌名：</label><input type="text" name="name" id="name">
-        </p>
-        <p>
-            <label for="">歌手：</label><input type="text" name="singer" id="singer">
-        </p>
-        <p>
-            <label for="">封面：</label><input type="file" name="avatar">
-        </p>
-        <p>
-            <input type="submit" value="添加歌曲">
-        </p>
-    </div>
-    </form>
+	<!-- 页头部分  start-->
+	<div class="header w">
+            <h1></h1>
+            <div class="header-l">
+                <ul>
+                    <li>
+                        <a href="#">音乐馆</a>
+                    </li>
+                    <li>
+                        <a href="#">我的音乐</a>
+                    </li>
+                    <li>
+                        <a href="#">客户端</a>
+                    </li>
+                    <li>
+                        <a href="#">音乐号</a>
+                    </li>
+                    <li>
+                        <a href="#">VIP</a>
+                    </li>
+            </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="中国新歌曲" class="search-a" />
+                <input type="button" value="" class="search-b" />
+            </div >
+            <ul class="search-r">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">开通绿钻豪华版</a></li>
+                <li><a href="#">开通付费包</a></li>
+            </ul>
+        </div>
+        <!-- 页头部分  end-->
+        <!-- banner部分 start -->
+        <div class="banner">
+            <div class="w">
+                <div class="wenzi">
+                    <h3><a href="javascript:;" id="add_song">添加歌曲</a></h3>
+                    <div class="wenzi-a">
+                    <a href="#">全部 ></a>
+                    <a href="#">美国</a>
+                    <a href="#">美国</a>
+                    <a href="#">美国</a>
+                    <a href="#">美国</a>
+                    <a href="#">港台</a>
+                    </div>
+                </div>
+                <div class="banner-b">
+                    <ul>
+                        <li>
+                        <img src="img/11.jpg" />
+                        <h5><a href="#">我们的时光</a></h5>
+                        <p><a href="#">TFBOYS</a></p>
+                        </li>
+                        <li>
+                        <img src="img/12.jpg" />
+                        <h5><a href="#">异想</a></h5>
+                        <p><a href="#">陈翔</a></p>
+                        </li>
+                        <li>
+                        <img src="img/13.jpg" />
+                        <h5><a href="#">陪你听全世界</a></h5>
+                        <p><a href="#">丢火车乐队</a></p>
+                        </li>
+                        <li>
+                        <img src="img/14.jpg" />
+                        <h5><a href="#">中国新歌声第二季 第4期</a></h5>
+                        <p><a href="#">中国新歌声</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- banner部分 end -->
+<!-- 点歌表单  dorp-song-->
+<div class="dorp-song">
+        <h2 >添加歌曲</h2>
+        <form id="form" action="/music/add" method="post" enctype="multipart/form-data">
+        <div class="dorp-song-table">
+            <p>
+                <label for="">歌名：</label><input type="text" name="name" id="name" placeholder="请输入歌名">
+            </p>
+            <p>
+                <label for="">歌手：</label><input type="text" name="singer" id="singer" placeholder="请输入歌手名">
+            </p>
+            <p>
+                <label for="" class="duibuqi">封面：</label>
+                <input type="file" name="avatar" >
+            </p>
+            <p class="submit_p">
+                <input type="submit" value="添加歌曲">
+            </p>
+        </div>
+        </form>
+        <div class="f">×</div>
+</div>
+   
+    	<!-- 页中下部分 end -->
+	<div class="footer">
+            <div class="footer-t w">
+                <div class="footer-t-l">
+                    <h4><a href="#">下载QQ音乐客户端</a></h4>
+                    <ul>
+                        <li>
+                            <div class="footer-j"></div>
+                            <p><a href="#">PC版</a></p>
+                        </li>
+                        <li>
+                            <div class="footer-j"></div>
+                            <p><a href="#">Mac版</a></p>
+                        </li>
+                        <li>
+                            <div class="footer-j"></div>
+                            <p><a href="#">Android版</a></p>
+                        </li>
+                        <li>
+                            <div class="footer-j"></div>
+                            <p><a href="#">iPhone版</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-t-c">
+                    <h4><a href="#">特色产品</a></h4>
+                    <ul>
+                        <li><div class="footer-k"></div>
+                        <p><a href="#">全民K歌</a></p>
+                        <p><a href="#">车载互联</a></p>
+                        </li>
+                        <li><div class="footer-k"></div>
+                        <p><a href="#">Super Sound</a></p>
+                        <p><a href="#">QQ演出</a></p>
+                        </li>
+                        <li><div class="footer-k"></div>
+                        <p><a href="#">QPlay</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-t-r">
+                    <h4><a href="#">合作链接</a></h4>
+                    <ul>
+                        <li>
+                            <p><a href="#">QQ空间</a></p>
+                            <p><a href="#">CJ E&M</a></p>
+                            <p><a href="#">腾讯视频</a></p>
+                            <p><a href="#">最新版QQ</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">QQ空间</a></p>
+                            <p><a href="#">CJ E&M</a></p>
+                            <p><a href="#">腾讯视频</a></p>
+                            <p><a href="#">最新版QQ</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">手机QQ空间</a></p>
+                            <p><a href="#">CJ E&M</a></p>
+                            <p><a href="#">腾讯视频</a></p>
+                            <p><a href="#">最新版QQ</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-b w">
+                <p>关于腾讯 | About Tencent | 服务条款 | 用户服务协议 | 隐私政策 | 广告服务 | 腾讯招聘 | 客服中心 | 网站导航</p>
+                <p>
+                    Copyright  1998 - 2017 Tencent. All Rights Reserved.
+                </p>
+                <p>
+                    腾讯公司©版权所有 腾讯网络文化经营许可证
+                </p>
+            </div>
+        </div>
     <script src="js/jquery.min.js"></script>
     <script>
         $('#form').on('submit', function(){
@@ -39,6 +194,14 @@
             //     url:'/music/add'
             // });
         });
+        $('#add_song').on('click', function() {
+           
+            
+            $('.dorp-song').addClass('current');
+        })
+        $('.f').on('click',function() {
+            $('.dorp-song').removeClass('current');
+        })
     </script>
 </body>
 </html>
